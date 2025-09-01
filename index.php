@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gedeon Godway HOUNKPATI - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <p class="nav-name">
+                    <span class="logo-devflow">DevFlow</span>
+                </p>
+            </div>
+             <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav-list">
+                        <a href="#home" class="nav-link active-link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#certifications" class="nav-link">Certifications</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#detailed-projects" class="nav-link">Projets</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav-list">
+                        <a href="#contact" class="nav-link">Contact</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+             </div>
+
+             <!--Dark Mode-->
+             <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+             </div>
+             <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+             </div>
+
+        </nav>
+
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello I'm</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText"></span>
+                    </div>
+                    <div class="text-info">
+                        <p>
+                            <span class="name-coffee">Gédéon Godway HOUNKPATI</span><br>
+                            Co-Fondateur, CTO & Directeur Technologique - MiabeInnovation<br>
+                            Développeur Full-Stack & DevOps spécialisé dans les solutions innovantes<br>
+                            Expertise : Django · C# · PHP · Architecture Cloud
+                        </p>
+                    </div>
+                    <div class="text-btn">
+                        <a href="#contact"><button class="btn hire-btn">Hire Me</button></a>
+                        <a href="CV.pdf" download="CV"><button class="btn">Download CV<i class="uil uil-file"></i></button></a>
+                    </div>
+                    <div class="socical_icons">
+                        <div class="icon_circle"></div>
+                        <a href="#"><div class="icon"><i class="uil uil-instagram"></i></div></a>
+                        <a href="https://www.linkedin.com/in/kofi-g%C3%A9d%C3%A9on-godway-hounkpati-104926261/"><div class="icon"><i class="uil uil-linkedin-alt"></i></div></a>
+                        <a href="#"><div class="icon"><i class="uil uil-behance-alt"></i></div></a>
+                        <a href="https://github.com/users/gedeon2004/projects/1"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+                    </div>
+                </div>
+                <div class="featured-image">
+                    <div class="image">
+                        <img src="gedeon.jpg" alt="Gedeon Godway HOUNKPATI" >
+                    </div>
+                </div>
+            </section>
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <figcaption>
+                                    <img src="gedeon2.jpg" alt="Gedeon Godway HOUNKPATI" class="profile"/>
+                                    <h2>CTO & Directeur Technologique</h2>
+                                    <p>Co-fondateur de MiabeInnovation, je dirige la stratégie technologique et le développement de solutions innovantes. Passionné par la création d'applications web et mobiles qui transforment les idées en réalité.</p>
+                                   <p class="professional-statement">
+                                        <span class="pro-text">Actuellement en </span>
+                                        <span class="pro-year">3ème année</span>
+                                        <span class="pro-text"> parcours </span>
+                                        <span class="pro-degree">Licence Génie Logiciel</span>
+                                        <span class="pro-text"> à </span>
+                                        <span class="pro-institute">IPNet Institute of Technology</span>
+                                        <span class="pro-text">, je développe plusieurs projets ambitieux qui m'ont conduit à approfondir de nouvelles technologies comme </span>
+                                        <span class="pro-tech">React, Flutter, Spring Boot et C++</span>
+                                    </p>
+                                    <!-- <a href="https://www.miabeinnovation.com" target="_blank">
+                                        <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAiIGhlaWdodD0iNDAiIHZpZXdCb3g9IjAgMCAxMDAgNDAiPjxwYXRoIGZpbGw9IiMzYjgyZjYiIGQ9Ik00MCAxMGg0MHYyMEg0MHoiLz48cGF0aCBmaWxsPSIjZmZmIiBkPSJNNTUgMjBjMC0yLjggMi4yLTUgNS01czUgMi4yIDUgNS0yLjIgNS01IDUtNS0yLjItNS01eiIvPjx0ZXh0IHg9IjQ1IiB5PSIyNSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjgiIGZpbGw9IiNmZmYiPk1JQUJFPC90ZXh0Pjwvc3ZnPg==" alt="MiabeInnovation" class="miabe-logo">
+                                    </a> -->
+                                </figcaption>
+                            </figure>
+                            <a href="#contact"><button class="about-me-btn">Hire Me</button></a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="skill">
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="python.png" alt="Python" class="skill-icon">
+                                    Python
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per python">
+                                        <span class="tooltip">90%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="django.png" alt="Django" class="skill-icon">
+                                    Django
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per django">
+                                        <span class="tooltip">95%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="js.png" alt="JavaScript" class="skill-icon">
+                                    JavaScript
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per javascript">
+                                        <span class="tooltip">75%</span>
+                                    </span>
+                                </div>
+                            </div> 
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="mysql.png" alt="MySQL" class="skill-icon">
+                                    MySQL
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per mysql">
+                                        <span class="tooltip">80%</span>
+                                    </span>
+                                </div>
+                            </div> 
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="postgresql.png" alt="PostgreSQL" class="skill-icon">
+                                    PostgreSQL
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per postgresql">
+                                        <span class="tooltip">85%</span>
+                                    </span>
+                                </div>
+                            </div> 
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="php.png" alt="PHP" class="skill-icon">
+                                    PHP
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per php">
+                                        <span class="tooltip">85%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="csharp.png" alt="C#" class="skill-icon">
+                                    C#
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per csharp">
+                                        <span class="tooltip">70%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="java.png" alt="Java" class="skill-icon">
+                                    Java
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per java">
+                                        <span class="tooltip">50%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="laravel.png" alt="laravel" class="skill-icon">
+                                    Laravel
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per laravel">
+                                        <span class="tooltip">60%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="symfony.png" alt="Symfony" class="skill-icon">
+                                    Symfony
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per symfony">
+                                        <span class="tooltip">75%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skill-box">
+                                <span class="title">
+                                    <img src="wordpress.png" alt="Symfony" class="skill-icon">
+                                    WordPress
+                                </span>
+                                <div class="skill-bar">
+                                    <span class="skill-per wordpress">
+                                        <span class="tooltip">80%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects & Achievements</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <h3>Completed</h3>
+                        <label>25+ Finished Projects</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Clients</h3>
+                        <label>50+ Satisfied Clients</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+                        <h3>Experience</h3>
+                        <label>3+ Years in development</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-graduation-cap"></i>
+                        <h3>Certifications</h3>
+                        <label>10+ Technical Certifications</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-presentation-play"></i>
+                        <h3>JPO Participation</h3>
+                        <label>5+ Events Presented</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-rocket"></i>
+                        <h3>Startup</h3>
+                        <label>Co-founder of MiabeInnovation</label>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Section Technologies en Apprentissage -->
+            <div class="learning-section">
+                <div class="learning-header">
+                    <h3>🚀 Futur Immédiat</h3>
+                    <p>Prochaines conquêtes technologiques en cours d'acquisition</p>
+                </div>
+                
+                <div class="learning-skills">
+                    <!-- React JS -->
+                    <div class="learning-item">
+                        <div class="learning-icon-wrapper">
+                            <div class="learning-icon">
+                                <img src="react.png" alt="React" class="skill-icon">
+                                <div class="icon-halo"></div>
+                            </div>
+                            <div class="learning-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="65"></div>
+                                </div>
+                                <span class="progress-text">65%</span>
+                            </div>
+                        </div>
+                        <span class="learning-label">React JS</span>
+                        <div class="learning-wave"></div>
+                    </div>
+
+                    <!-- Flutter -->
+                    <div class="learning-item">
+                        <div class="learning-icon-wrapper">
+                            <div class="learning-icon">
+                                <img src="flutter.png" alt="Flutter" class="skill-icon">
+                                <div class="icon-halo"></div>
+                            </div>
+                            <div class="learning-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="40"></div>
+                                </div>
+                                <span class="progress-text">40%</span>
+                            </div>
+                        </div>
+                        <span class="learning-label">Flutter</span>
+                        <div class="learning-wave"></div>
+                    </div>
+
+                    <!-- C++ -->
+                    <div class="learning-item">
+                        <div class="learning-icon-wrapper">
+                            <div class="learning-icon">
+                                <img src="cpp.png" alt="C++" class="skill-icon">
+                                <div class="icon-halo"></div>
+                            </div>
+                            <div class="learning-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="55"></div>
+                                </div>
+                                <span class="progress-text">55%</span>
+                            </div>
+                        </div>
+                        <span class="learning-label">C++</span>
+                        <div class="learning-wave"></div>
+                    </div>
+
+                    <!-- Spring Boot -->
+                    <div class="learning-item">
+                        <div class="learning-icon-wrapper">
+                            <div class="learning-icon">
+                                <img src="springboot.png" alt="Spring Boot" class="skill-icon">
+                                <div class="icon-halo"></div>
+                            </div>
+                            <div class="learning-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="35"></div>
+                                </div>
+                                <span class="progress-text">35%</span>
+                            </div>
+                        </div>
+                        <span class="learning-label">Spring Boot</span>
+                        <div class="learning-wave"></div>
+                    </div>
+
+                    <!-- Node.js -->
+                    <div class="learning-item">
+                        <div class="learning-icon-wrapper">
+                            <div class="learning-icon">
+                                <img src="nodejs.png" alt="Node.js" class="skill-icon">
+                                <div class="icon-halo"></div>
+                            </div>
+                            <div class="learning-progress">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" data-progress="70"></div>
+                                </div>
+                                <span class="progress-text">70%</span>
+                            </div>
+                        </div>
+                        <span class="learning-label">Node.js</span>
+                        <div class="learning-wave"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Certificats -->
+            <section class="section" id="certifications">
+                <div class="top-header">
+                    <h1>Mes Certifications</h1>
+                </div>
+                <div class="certificates-container">
+                    <div class="certificate-slider">
+                        <div class="certificate-item">
+                            <img src="chemin/vers/certificat1.jpg" alt="Certificat 1">
+                            <div class="certificate-info">
+                                <h3>Nom du Certificat 1</h3>
+                                <p>Description du certificat</p>
+                            </div>
+                        </div>
+                        <div class="certificate-item">
+                            <img src="chemin/vers/certificat2.jpg" alt="Certificat 2">
+                            <div class="certificate-info">
+                                <h3>Nom du Certificat 2</h3>
+                                <p>Description du certificat</p>
+                            </div>
+                        </div>
+                        <div class="certificate-item">
+                            <img src="chemin/vers/certificat2.jpg" alt="Certificat 3">
+                            <div class="certificate-info">
+                                <h3>Nom du Certificat 3</h3>
+                                <p>Description du certificat</p>
+                            </div>
+                        </div>
+                        <div class="certificate-item">
+                            <img src="chemin/vers/certificat2.jpg" alt="Certificat 4">
+                            <div class="certificate-info">
+                                <h3>Nom du Certificat 4</h3>
+                                <p>Description du certificat</p>
+                            </div>
+                        </div>
+                        <!-- Ajoutez d'autres certificats ici -->
+                    </div>
+                    <div class="slider-controls">
+                        <button class="prev-btn">&lt;</button>
+                        <button class="next-btn">&gt;</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Section Projets Détaillés -->
+            <section class="section" id="detailed-projects">
+                <div class="top-header">
+                    <h1>Mes Projets</h1>
+                </div>
+                <div class="projects-gallery">
+                    <div class="project-item">
+                        <div class="project-media">
+                            <img src="chemin/vers/projet1.jpg" alt="Projet 1" class="project-image">
+                            <!-- ou pour une vidéo -->
+                            <!-- <video controls class="project-video">
+                                <source src="chemin/vers/video1.mp4" type="video/mp4">
+                            </video> -->
+                        </div>
+                        <div class="project-details">
+                            <h3>Nom du Projet 1</h3>
+                            <p>Description détaillée du projet, technologies utilisées, etc.</p>
+                            <a href="#" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    
+                    <div class="project-item">
+                        <div class="project-media">
+                            <video controls class="project-video">
+                                <source src="chemin/vers/video-demo.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-details">
+                            <h3>Projet avec démo vidéo</h3>
+                            <p>Description du projet avec démonstration en vidéo.</p>
+                            <a href="#" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+
+                     <div class="project-item">
+                        <div class="project-media">
+                            <img src="chemin/vers/projet1.jpg" alt="Projet 1" class="project-image">
+                        </div>
+                        <div class="project-details">
+                            <h3>Nom du Projet 1</h3>
+                            <p>Description détaillée du projet, technologies utilisées, etc.</p>
+                            <a href="#" class="project-link">Voir le projet</a>
+                        </div>
+                    </div>
+                    <!-- Ajoutez d'autres projets ici -->
+                </div>
+            </section>
+
+            <section class="section" id="contact">
+                <div class="top-header">
+                    <h1>Let's work Together</h1>
+                    <span>Do you have a project in your mind, contact me here</span>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="contact-info">
+                            <h2>Find me <i class="uil uil-corner-right-down"></i></h2>
+                            <p><i class="uil uil-envelope"></i>Email: hounkpatigedeon4@gmail.com</p>
+                            <p><i class="uil uil-phone"></i>Phone: 228 70 38 43 15 /99 30 99 45</p>
+                            <p><i class="uil uil-map-marker"></i>Location: Lomé, Togo</p>
+                            <p><i class="uil uil-globe"></i>Website: www.miabeinnovation.com</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-control">
+                            <div class="form-inputs">
+                                <input type="text" class="input-field" placeholder="Your Name">
+                                <input type="text" class="input-field" placeholder="Your Email">
+                            </div>
+                            <div class="text-area">
+                                <input type="text" class="input-subject" placeholder="Subject">
+                                <textarea placeholder="Message" class="textarea"></textarea>
+                            </div>
+                            <div class="form-button">
+                                <button class="btn">Send<i class="uil uil-message"></i></button>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="middle-footer">
+                <ul class="footer-menu">
+                    <li class="footer_menu_list">
+                        <a href="#home">Home</a>
+                    </li>    
+                    <li class="footer_menu_list">
+                        <a href="#about">About</a>
+                    </li> 
+                    <li class="footer_menu_list">
+                        <a href="#projects">Projects</a>
+                    </li> 
+                    <li class="footer_menu_list">
+                        <a href="#contact">Contact</a>
+                    </li> 
+                </ul>
+            </div>
+            <div class="footer-social-icons">
+                <a href="#"><div class="icon"><i class="uil uil-instagram"></i></div></a>
+                <a href="https://www.linkedin.com/in/kofi-g%C3%A9d%C3%A9on-godway-hounkpati-104926261/"><div class="icon"><i class="fa-brands fa-linkedin-in icon"></i></div></a>
+                <a href="#"><div class="icon"><i class="uil uil-behance-alt"></i></div></a>
+                <a href="https://github.com/users/gedeon2004/projects/1"><div class="icon"><i class="uil uil-github-alt"></i></div></a>
+            </div>
+            <div class="bottom-footer">
+                <p>Copyright &copy; <a href="#home" style="text-decoration: none; color: var(--first-color);">Gedeon Godway HOUNKPATI</a> - All rights reserved 2024</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script>
+        function myMenuFunction() {
+            var menuBtn = document.getElementById("myNavMenu");
+
+            if (menuBtn.className === "nav-menu") {
+                menuBtn.className += " responsive";
+            } else {
+                menuBtn.className = "nav-menu";
+            }
+        }
+
+        const body = document.querySelector("body"),
+            toggleSwitch = document.getElementById("toggle-switch");
+
+        toggleSwitch.addEventListener("click", () => {
+            body.classList.toggle("dark");
+        });
+
+        var typingEffect = new Typed(".typedText", {
+            strings: ["CTO", "Developer", "Innovator"],
+            loop: true, 
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 2000,
+        });
+
+        const sr = ScrollReveal({
+            origin: "top",
+            distance: "80px",
+            duration: 2000,
+            reset: true, 
+        });
+
+        sr.reveal(".featured-name", {delay: 100});
+        sr.reveal(".text-info", {delay: 200});
+        sr.reveal(".text-btn", {delay: 200});
+        sr.reveal(".socical_icons", {delay: 200});
+        sr.reveal(".featured-image", {delay: 320});
+
+        sr.reveal(".project-box", {interval: 200});
+        sr.reveal(".top-header", {});
+
+        const srLeft = ScrollReveal({
+            origin: "left",
+            distance: "80px",
+            duration: 2000,
+            reset: true, 
+        })
+
+        srLeft.reveal(".about-info", {delay: 100});
+        srLeft.reveal(".contact-info", {delay: 100});
+
+        const srRight = ScrollReveal({
+            origin: "left",
+            distance: "80px",
+            duration: 2000,
+            reset: true, 
+        })
+
+        srRight.reveal(".skill", {delay: 100});
+        srRight.reveal(".skill-box", {delay: 100});
+
+        const sections = document.querySelectorAll(".section[id]");
+
+        function scrollActive() {
+            const scrollY = window.scrollY;
+
+            sections.forEach((current) => {
+                const sectionHeight = current.offsetHeight,
+                    sectionTop = current.offsetTop - 50, 
+                    sectionId = current.getAttribute("id");
+                    
+                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    document
+                    .querySelector(".nav-menu a[href*=" + sectionId + "]")
+                    .classList.add("active-link");
+                } else {
+                    document
+                    .querySelector(".nav-menu a[href*=" + sectionId + "]")
+                    .classList.remove("active-link");
+                }
+            });
+        }
+
+        // Slider pour les certificats
+        const certificateSlider = document.querySelector('.certificate-slider');
+        const certificateItems = document.querySelectorAll('.certificate-item');
+        const prevBtn = document.querySelector('.prev-btn');
+        const nextBtn = document.querySelector('.next-btn');
+        let currentIndex = 0;
+
+        function updateSlider() {
+            const itemWidth = certificateItems[0].offsetWidth + 30; // width + margin
+            certificateSlider.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < certificateItems.length - 1) {
+                currentIndex++;
+                updateSlider();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                updateSlider();
+            }
+        });
+
+
+        // Animation des barres de progression
+        document.addEventListener('DOMContentLoaded', function() {
+            const progressBars = document.querySelectorAll('.progress-fill');
+            
+            progressBars.forEach(bar => {
+                const progress = bar.getAttribute('data-progress');
+                setTimeout(() => {
+                    bar.style.width = progress + '%';
+                }, 500);
+            });
+        });
+
+        // Initialisation
+        updateSlider();
+
+        window.addEventListener("scroll", scrollActive);
+    </script>
+</body>
+</html>

@@ -556,19 +556,20 @@
                         </div>
                     </div>
                     <div class="col">
-                        <div class="form-control">
+                        <form id="contactForm" class="form-control" action="https://formsubmit.co/hounkpatigedeon4@gmail.com" method="POST">
                             <div class="form-inputs">
-                                <input type="text" class="input-field" placeholder="Your Name">
-                                <input type="text" class="input-field" placeholder="Your Email">
+                                <input type="text" name="name" class="input-field" placeholder="Your Name" required>
+                                <input type="email" name="email" class="input-field" placeholder="Your Email" required>
                             </div>
                             <div class="text-area">
-                                <input type="text" class="input-subject" placeholder="Subject">
-                                <textarea placeholder="Message" class="textarea"></textarea>
+                                <input type="text" name="subject" class="input-subject" placeholder="Subject" required>
+                                <textarea name="message" placeholder="Message" class="textarea" required></textarea>
                             </div>
                             <div class="form-button">
-                                <button class="btn">Send<i class="uil uil-message"></i></button>
+                                <button type="submit" class="btn">Send<i class="uil uil-message"></i></button>
                             </div>
-                        </div>  
+                            <div id="formMessage"></div> <!-- Message stylé apparaîtra ici -->
+                        </form>
                     </div>
                 </div>
             </section>
@@ -731,6 +732,44 @@
         // Initialisation
         updateSlider();
 
+        const form = document.getElementById('contactForm');
+        const messageDiv = document.getElementById('formMessage');
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault(); // Empêche le rechargement de la page
+
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            })
+            .then(response => {
+                if (response.ok) {
+                    messageDiv.textContent = "Merci ! Votre message a été envoyé avec succès. Je vous répondrai bientôt.";
+                    messageDiv.style.padding = "10px";
+                    messageDiv.style.marginTop = "10px";
+                    messageDiv.style.backgroundColor = "green";
+                    messageDiv.style.color = "#fff";
+                    messageDiv.style.borderRadius = "5px";
+                    form.reset(); // Vide le formulaire après envoi
+                } else {
+                    throw new Error("Erreur lors de l'envoi.");
+                }
+            })
+            .catch(error => {
+                messageDiv.textContent = "Oups ! Une erreur est survenue. Veuillez réessayer.";
+                messageDiv.style.padding = "10px";
+                messageDiv.style.marginTop = "10px";
+                messageDiv.style.backgroundColor = "red";
+                messageDiv.style.color = "#fff";
+                messageDiv.style.borderRadius = "5px";
+            });
+        });
+        
         window.addEventListener("scroll", scrollActive);
     </script>
 </body>
